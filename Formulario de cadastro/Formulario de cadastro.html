@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <title>Formulario de Cadastro</title>
+</head>
+
+<body>
+    <h1>
+        Formulario para cadastramento
+    </h1>
+    <form action="" class="row g-3" id="cadastros">
+    <div class="row g-3">
+        <div class="col">
+            <label for=""> Nome:</label>
+            <input type="text" class="form-control" placeholder="Nome" aria-label="nome " name="nome"
+                id="nome" required>
+        </div>
+        <div class="col">
+            <label for="">Sobrenome:</label>
+            <input type="text" class="form-control" placeholder="Sobrenome" aria-label=" Sobrenome" name="sn" id="sn" required>
+        </div>
+    </div>
+        <div class="col-md-6">
+            <label for="" class="form-label">Email:</label>
+            <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div class="col-md-6">
+            <label for="" class="form-label">Senha:</label>
+            <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" required>
+        </div>
+        <div class="col-12" >
+            <label for="" class="form-label">
+                CEP:
+            </label>
+            <input type="text" class="form-control" onblur="pesquisarcep(this.value)" maxlength="8" placeholder="CEP" name="CEP" id="CEP" required>
+        </div>
+        <div class="col-12">
+            <label for="" class="form-label"> Endereço:</label>
+            <input type="text" class="form-control" placeholder="Endereço" name="Endereco" id="Endereco">
+        </div>
+        <div class="col-12">
+            <label for="" class="form-label"> Complemento:</label>
+            <input type="text" class="form-control" placeholder="Complemento" name="Complemento" id="Complemento">
+        </div>
+        <div class="col-md-6">
+            <label for="" class="form-label">Bairro:</label>
+            <input type="text" class="form-control" placeholder="Bairro" name="Bairro" id="Bairro">
+        </div>
+        <div class="col-md-6">
+            <label for="" class="form-label">Cidade:</label>
+            <input type="text" class="form-control" placeholder="Cidade" name="Cidade" id="Cidade">
+        </div>
+        <div class="col-md-4">
+            <label for="" class="form-label">UF:</label>
+            <input type="text" class="form-control" placeholder="Estado" name="UF" id="UF">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox" required>
+                <label for="" class="form-check-label" for="gridCheck">
+                    Está correto as informações passada
+                </label>
+            </div>
+        </div>
+        <div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" id= "enviar" value="btnincluir" onclick=btnenviar()>
+                    Enviar
+                </button>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="cadastro.js"></script>
+</body>
+</body>
+
+</html>
